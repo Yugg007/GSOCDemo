@@ -6,7 +6,7 @@ import { Flex, Modal, Button, Card } from "rimble-ui";
 import '../../styles/Modal.scss';
 import { AVATARS, STATUS } from '../../constants';
 import { ethers } from 'ethers';
-import ElectionABI from '../../../build/Election.sol/Election.json'
+import ElectionABI from '../../../build/Election.json'
 
 export function OklahomaModal({ Candidate, status, candidates, CurrentElection, account,contractAddress,ballotAddress  }) {
     const [isOpen, setIsOpen] = useState(false);

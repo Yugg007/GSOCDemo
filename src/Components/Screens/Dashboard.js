@@ -16,7 +16,7 @@ import { CONTRACTADDRESS } from '../constants'
 import { ethers } from "ethers";
 import Authentication from '../../build/Authentication.json'
 import ElectionOrganiser from "../../build/ElectionOrganizer.json";
-import ElectionABI from '../../build/Election.sol/Election.json'
+import ElectionABI from '../../build/Election.json'
 import { useNavigate } from "react-router-dom";
 
 
@@ -243,9 +243,7 @@ const Dashboard = () => {
           <div style={{ float: "right", marginLeft:10, marginBottom:10}}>
             <CreateElectionModal DashContractAddress={DashContractAddress} fetchElections={fetchElections}/>
           </div>
-          {/* <a href="/brightid">
-            <div className="createElectionButton">Get BrightID Verified!</div>
-          </a> */}
+
         </div>
 
         <br />
