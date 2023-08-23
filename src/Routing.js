@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Auth from "./Components/Screens/Auth";
 import Dashboard from "./Components/Screens/Dashboard";
 import Election from "./Components/Screens/Election";
-import BrightID from "./Components/Screens/BrightID";
+
 
 const Routing = () => {
   return (
@@ -14,8 +14,6 @@ const Routing = () => {
         <Route path="/auth" element={<Auth />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/election" element={<Election />} />
-        <Route path="/brightid" element={<BrightID />} />
-
       </Routes>
 
     // <BrowserRouter>

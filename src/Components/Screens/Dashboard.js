@@ -19,7 +19,7 @@ import ElectionOrganiser from "../../build/ElectionOrganizer.json";
 import ElectionABI from '../../build/Election.sol/Election.json'
 import { useNavigate } from "react-router-dom";
 
-// import BrightID from "./BrightID";
+
 
 const Dashboard = () => {
   const DashContractAddress = CONTRACTADDRESS;
@@ -243,9 +243,9 @@ const Dashboard = () => {
           <div style={{ float: "right", marginLeft:10, marginBottom:10}}>
             <CreateElectionModal DashContractAddress={DashContractAddress} fetchElections={fetchElections}/>
           </div>
-          <a href="/brightid">
+          {/* <a href="/brightid">
             <div className="createElectionButton">Get BrightID Verified!</div>
-          </a>
+          </a> */}
         </div>
 
         <br />
